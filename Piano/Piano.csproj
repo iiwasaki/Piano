@@ -58,6 +58,13 @@
   <ItemGroup>
     <MonoGameContentReference Include="Content\Content.mgcb" />
     <None Include="app.manifest" />
+    <None Include="Content\Click Clicked.xnb" />
+    <None Include="Content\Down Clicked.xnb" />
+    <None Include="Content\Left Clicked.xnb" />
+    <None Include="Content\Piano.xnb" />
+    <None Include="Content\Right Clicked.xnb" />
+    <None Include="Content\Space Clicked.xnb" />
+    <None Include="Content\Up Clicked.xnb" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Import Project="$(MSBuildExtensionsPath)\MonoGame\v3.0\MonoGame.Content.Builder.targets" />

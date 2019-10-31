@@ -12,10 +12,22 @@ namespace Piano
         GraphicsDeviceManager graphics;
         SpriteBatch spriteBatch;
 
+        //Piano textures
+        Texture2D pianoBase;
+        Texture2D leftClicked;
+        Texture2D upClicked;
+        Texture2D rightClicked;
+        Texture2D downClicked;
+        Texture2D spaceClicked;
+        Texture2D mouseClicked; 
+
         public Game1()
         {
             graphics = new GraphicsDeviceManager(this);
             Content.RootDirectory = "Content";
+            graphics.PreferredBackBufferWidth = 1280;
+            graphics.PreferredBackBufferHeight = 720;
+            this.IsMouseVisible = true; 
         }
 
         /// <summary>
@@ -40,7 +52,14 @@ namespace Piano
             // Create a new SpriteBatch, which can be used to draw textures.
             spriteBatch = new SpriteBatch(GraphicsDevice);
 
-            // TODO: use this.Content to load your game content here
+            pianoBase = Content.Load<Texture2D>("Piano");
+            leftClicked = Content.Load<Texture2D>("Left Clicked");
+            upClicked = Content.Load<Texture2D>("Up Clicked");
+            rightClicked = Content.Load<Texture2D>("Right Clicked");
+            downClicked = Content.Load<Texture2D>("Down Clicked");
+            spaceClicked = Content.Load<Texture2D>("Space Clicked");
+            mouseClicked = Content.Load<Texture2D>("Click Clicked");
+
         }
 
         /// <summary>
@@ -73,9 +92,13 @@ namespace Piano
         /// <param name="gameTime">Provides a snapshot of timing values.</param>
         protected override void Draw(GameTime gameTime)
         {
-            GraphicsDevice.Clear(Color.CornflowerBlue);
+            GraphicsDevice.Clear(Color.White);
 
-            // TODO: Add your drawing code here
+            spriteBatch.Begin();
+
+            spriteBatch.Draw(pianoBase, new Vector2(0, 0), Color.White);
+
+            spriteBatch.End(); 
 
             base.Draw(gameTime);
         }
