@@ -73,6 +73,42 @@
 /processorParam:TextureFormat=Color
 /build:Right Clicked.png
 
+#begin Sounds/A4.wav
+/importer:WavImporter
+/processor:SoundEffectProcessor
+/processorParam:Quality=Best
+/build:Sounds/A4.wav
+
+#begin Sounds/C4.wav
+/importer:WavImporter
+/processor:SoundEffectProcessor
+/processorParam:Quality=Best
+/build:Sounds/C4.wav
+
+#begin Sounds/D4.wav
+/importer:WavImporter
+/processor:SoundEffectProcessor
+/processorParam:Quality=Best
+/build:Sounds/D4.wav
+
+#begin Sounds/E4.wav
+/importer:WavImporter
+/processor:SoundEffectProcessor
+/processorParam:Quality=Best
+/build:Sounds/E4.wav
+
+#begin Sounds/F4.wav
+/importer:WavImporter
+/processor:SoundEffectProcessor
+/processorParam:Quality=Best
+/build:Sounds/F4.wav
+
+#begin Sounds/G4.wav
+/importer:WavImporter
+/processor:SoundEffectProcessor
+/processorParam:Quality=Best
+/build:Sounds/G4.wav
+
 #begin Space Clicked.png
 /importer:TextureImporter
 /processor:TextureProcessor
